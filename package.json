@@ -21,8 +21,12 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-icons": "^5.4.0",
+<<<<<<< HEAD
     "react-router-dom": "^6.28.0",
     "xlsx": "^0.18.5"
+=======
+    "react-router-dom": "^6.28.0"
+>>>>>>> be8935d76fc2951a005f753eb2ad85136b0589cc
   },
   "devDependencies": {
     "@eslint/js": "^9.13.0",

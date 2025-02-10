@@ -3,7 +3,10 @@
 import React, { useState } from 'react';
 import './AdminDashboard.css';
 import { useNavigate } from 'react-router-dom';
+<<<<<<< HEAD
 import * as XLSX from 'xlsx';
+=======
+>>>>>>> be8935d76fc2951a005f753eb2ad85136b0589cc
 
 function AdminDashboard() {
     // Add new state for image modal
@@ -16,7 +19,10 @@ function AdminDashboard() {
             id: 1,
             name: "John Doe",
             email: "john@example.com",
+<<<<<<< HEAD
             phno: "1234567890",
+=======
+>>>>>>> be8935d76fc2951a005f753eb2ad85136b0589cc
             events: "None",
             paymentStatus: "Pending",
             image: "path/to/image1.jpg",
@@ -27,7 +33,10 @@ function AdminDashboard() {
             id: 2,
             name: "Jane Smith",
             email: "jane@example.com",
+<<<<<<< HEAD
             phno: "9876543210",
+=======
+>>>>>>> be8935d76fc2951a005f753eb2ad85136b0589cc
             events: "None",
             paymentStatus: "Pending",
             image: "path/to/image2.jpg",
@@ -43,7 +52,10 @@ function AdminDashboard() {
     const [newUser, setNewUser] = useState({
         name: "",
         email: "",
+<<<<<<< HEAD
         phno: "",
+=======
+>>>>>>> be8935d76fc2951a005f753eb2ad85136b0589cc
         events: "None",
         paymentStatus: "Pending",
         utrNumber: "",
@@ -56,7 +68,11 @@ function AdminDashboard() {
     const addUser = (e) => {
         e.preventDefault();
         setUsers([...users, { ...newUser, id: users.length + 1 }]);
+<<<<<<< HEAD
         setNewUser({ name: "", email: "", phno: "", events: "None", paymentStatus: "Pending", utrNumber: "", transactionId: "" });
+=======
+        setNewUser({ name: "", email: "", events: "None", paymentStatus: "Pending", utrNumber: "", transactionId: "" });
+>>>>>>> be8935d76fc2951a005f753eb2ad85136b0589cc
         setShowAddForm(false);
     };
 
@@ -87,6 +103,7 @@ function AdminDashboard() {
         amountCollected: users.filter(u => u.paymentStatus === "Verified").length * 500
     };
 
+<<<<<<< HEAD
     // Add export to Excel function
     const exportToExcel = () => {
         // Prepare data for export
@@ -109,6 +126,8 @@ function AdminDashboard() {
         XLSX.writeFile(wb, "registrations.xlsx");
     };
 
+=======
+>>>>>>> be8935d76fc2951a005f753eb2ad85136b0589cc
     return (
         <div className="admin-dashboard">
             {/* Header */}
@@ -184,6 +203,7 @@ function AdminDashboard() {
                     </select>
                 </div>
                 <button 
+<<<<<<< HEAD
                     className="export-btn"
                     onClick={exportToExcel}
                 >
@@ -205,6 +225,8 @@ function AdminDashboard() {
                     Export to Excel
                 </button>
                 <button 
+=======
+>>>>>>> be8935d76fc2951a005f753eb2ad85136b0589cc
                     className="add-btn"
                     onClick={() => setShowAddForm(true)}
                 >
@@ -247,6 +269,7 @@ function AdminDashboard() {
                                 onChange={(e) => setNewUser({...newUser, email: e.target.value})}
                                 required
                             />
+<<<<<<< HEAD
                             <input
                                 type="tel"
                                 placeholder="Phone Number"
@@ -254,6 +277,8 @@ function AdminDashboard() {
                                 onChange={(e) => setNewUser({...newUser, phno: e.target.value})}
                                 required
                             />
+=======
+>>>>>>> be8935d76fc2951a005f753eb2ad85136b0589cc
                             <div className="modal-buttons">
                                 <button type="submit">Add User</button>
                                 <button type="button" onClick={() => setShowAddForm(false)}>Cancel</button>
@@ -270,7 +295,10 @@ function AdminDashboard() {
                         <tr>
                             <th>Name</th>
                             <th>Email</th>
+<<<<<<< HEAD
                             <th>Phone</th>
+=======
+>>>>>>> be8935d76fc2951a005f753eb2ad85136b0589cc
                             <th>Events</th>
                             <th>UTR Number/Transaction ID</th>
                             <th>Application ID</th>
@@ -284,7 +312,10 @@ function AdminDashboard() {
                             <tr key={user.id}>
                                 <td>{user.name}</td>
                                 <td>{user.email}</td>
+<<<<<<< HEAD
                                 <td>{user.phno}</td>
+=======
+>>>>>>> be8935d76fc2951a005f753eb2ad85136b0589cc
                                 <td>{user.events}</td>
                                 <td>{user.utrNumber}</td>
                                 <td>{user.transactionId}</td>

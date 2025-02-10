@@ -11,8 +11,11 @@
    position: relative;
    top: 0;
    overflow: visible;
+<<<<<<< HEAD
    margin-left: 0;
    margin-top: 0;
+=======
+>>>>>>> be8935d76fc2951a005f753eb2ad85136b0589cc
 }
 body {
   margin: 0;
@@ -22,7 +25,10 @@ body {
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
   position: relative;
+<<<<<<< HEAD
   
+=======
+>>>>>>> be8935d76fc2951a005f753eb2ad85136b0589cc
 }
 
 body::-webkit-scrollbar {
@@ -41,10 +47,15 @@ body::-webkit-scrollbar-thumb {
 
 .headline{
   display: flex;
+<<<<<<< HEAD
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
+=======
+  align-items: center;
+  justify-content: center;
+>>>>>>> be8935d76fc2951a005f753eb2ad85136b0589cc
 }
 .headline img {
   width: 400px;
@@ -67,10 +78,15 @@ body::-webkit-scrollbar-thumb {
   color: #C14953;
   z-index: 2;
   font-family: 'Cinzel Decorative';
+<<<<<<< HEAD
   margin-top: 0;
   margin-left: 0;
   margin-top: 0;
   text-align: center;
+=======
+  margin-top: -800px;
+
+>>>>>>> be8935d76fc2951a005f753eb2ad85136b0589cc
 }
 
 
@@ -599,6 +615,7 @@ video {
 }
 
 .y2024{
+<<<<<<< HEAD
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
@@ -607,6 +624,17 @@ video {
 .y2024d{
   margin: 0 auto;
   gap: 80px;
+=======
+  width: 1200px;
+  margin-right: 80px;
+}
+
+.y2024d{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 160px;
+>>>>>>> be8935d76fc2951a005f753eb2ad85136b0589cc
 }
 .y2024d p{
   font-size: 20px;
@@ -661,10 +689,18 @@ video {
 }
 .footer{
   width: 100%;
+<<<<<<< HEAD
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 100px auto 10px;
+=======
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+>>>>>>> be8935d76fc2951a005f753eb2ad85136b0589cc
 }
 .footer img{
   width: 98%;
@@ -1159,9 +1195,13 @@ body {
 
 
   .what1 h1 {
+<<<<<<< HEAD
     font-size: 40px;
     width: 90%;
     margin: 0 auto;
+=======
+    font-size: 28px;
+>>>>>>> be8935d76fc2951a005f753eb2ad85136b0589cc
   }
 
   .video-container {
@@ -1588,6 +1628,7 @@ body {
   .year-image {
     height: 250px;
   }
+<<<<<<< HEAD
 }
 
 /* Ensure all sections are centered */
@@ -1638,4 +1679,6 @@ body {
   .participation-container {
     padding: 0 15px;
   }
+=======
+>>>>>>> be8935d76fc2951a005f753eb2ad85136b0589cc
 }
