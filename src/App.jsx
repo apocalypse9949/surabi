@@ -21,7 +21,7 @@ import ProtectedRoute from './components/ProtectedRoute';
 import Gallery from './pages/gallery';
 import AddEvent from './pages/AddEvent';
 import QR from './components/QR';
-
+import MySchedule from './pages/my-schedule';
 
 import './App.css';
 
@@ -63,6 +63,7 @@ function App() {
             } 
           />
           <Route path="/QR" element={<QR />} />
+          <Route path="/my-schedule" element={<MySchedule />} />
         </Routes>
       </div>
     </Router>
