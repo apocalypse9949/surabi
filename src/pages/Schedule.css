@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 270, 95%, 7%;
+  --foreground: 0, 0%, 100%;
+
+  --card: 270, 95%, 7%;
+  --card-foreground: 0, 0%, 100%;
+
+  --popover: 270, 95%, 7%;
+  --popover-foreground: 0, 0%, 100%;
+
+  --primary: 272, 91%, 73%;
+  --primary-foreground: 0, 0%, 100%;
+
+  --secondary: 270, 50%, 15%;
+  --secondary-foreground: 0, 0%, 100%;
+
+  --muted: 270, 50%, 15%;
+  --muted-foreground: 0, 0%, 100%;
+
+  --accent: 272, 91%, 73%;
+  --accent-foreground: 0, 0%, 100%;
+
+  --destructive: 0, 84%, 60%;
+  --destructive-foreground: 0, 0%, 100%;
+
+  --border: 270, 50%, 15%;
+  --input: 270, 50%, 15%;
+  --ring: 272, 91%, 73%;
+
+  --radius: 0.75rem;
+}
+
+body {
+  @apply bg-background text-foreground;
+}
+
+/* Add a subtle gradient animation to the background */
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.bg-gradient-animate {
+  background: linear-gradient(45deg, #1a0721, #2d1543);
+  background-size: 200% 200%;
+  animation: gradientShift 15s ease infinite;
+}
+

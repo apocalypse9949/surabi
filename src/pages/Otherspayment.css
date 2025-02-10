@@ -1,0 +1,35 @@
+.payment-container{
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    border-radius: 30px;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 100px;
+}
+.payment-container img{
+    width:300px;
+    border-radius: 30px;
+    margin-left: 13%;
+}
+.payment-container button{
+    font-family: "Kalnia";
+    margin-top: 50px;
+    width:100%;
+    padding:15px;
+    border:2px solid #691fa2;
+    background: #691fa276;
+    font-size: 17px;
+    border-radius:30px;
+    color:#691fa2;
+}
+.payment-container:hover{
+    color:#691fa2;
+    font-family: "Kalnia";
+    font-weight: 500;
+}

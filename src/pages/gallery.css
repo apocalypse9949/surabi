@@ -1,0 +1,242 @@
+.gallery-container {
+  padding: 120px 40px 80px;
+  background: linear-gradient(to bottom, rgba(26, 11, 46, 0.95), rgba(26, 11, 46, 0.98));
+  min-height: 100vh;
+}
+
+.gallery-container h1 {
+  text-align: center;
+  color: #BBE6E4;
+  font-size: 3.5rem;
+  font-weight: 300;
+  margin-bottom: 60px;
+  font-family: 'Kalnia', serif;
+  text-shadow: 
+    0 0 7px rgba(255, 255, 255, 0.6),
+    0 0 10px rgba(255, 255, 255, 0.8),
+    0 0 50px rgba(201, 163, 230, 0.8),
+    0 0 100px rgba(161, 113, 198, 0.5);
+  opacity: 0;
+  animation: fadeInDown 0.8s ease forwards;
+}
+
+.gallery-grid {
+  columns: 3 300px;
+  column-gap: 30px;
+  max-width: 1600px;
+  margin: 0 auto;
+  opacity: 0;
+  animation: fadeIn 1s ease 0.3s forwards;
+}
+
+.gallery-item {
+  break-inside: avoid;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  transform: scale(0.98);
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+
+.gallery-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(187, 230, 228, 0) 0%,
+    rgba(187, 230, 228, 0.2) 100%
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+}
+
+.gallery-item:hover {
+  transform: scale(1.02);
+  box-shadow: 
+    0 10px 20px rgba(0, 0, 0, 0.2),
+    0 0 30px rgba(187, 230, 228, 0.3);
+}
+
+.gallery-item:hover::before {
+  opacity: 1;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  backface-visibility: hidden;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.05);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Loading animation for images */
+.gallery-item.loading {
+  animation: shimmer 1.5s infinite;
+  background: linear-gradient(
+    90deg,
+    rgba(187, 230, 228, 0.1),
+    rgba(187, 230, 228, 0.2),
+    rgba(187, 230, 228, 0.1)
+  );
+  background-size: 200% 100%;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .gallery-grid {
+    columns: 3 250px;
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .gallery-container {
+    padding: 100px 20px 60px;
+  }
+
+  .gallery-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+  }
+
+  .gallery-grid {
+    columns: 2 200px;
+    column-gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery-container {
+    padding: 80px 15px 40px;
+  }
+
+  .gallery-container h1 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+
+  .gallery-grid {
+    columns: 1 100%;
+  }
+  
+  .gallery-item {
+    margin-bottom: 20px;
+  }
+}
+
+/* Hover effects for touch devices */
+@media (hover: none) {
+  .gallery-item:hover {
+    transform: none;
+    box-shadow: none;
+  }
+
+  .gallery-item:hover img {
+    transform: none;
+  }
+
+  .gallery-item::before {
+    display: none;
+  }
+}
+
+/* Modal styles */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease;
+}
+
+.modal-content {
+  position: relative;
+  max-width: 90vw;
+  max-height: 90vh;
+  animation: zoomIn 0.3s ease;
+}
+
+.modal-content img {
+  max-width: 100%;
+  max-height: 90vh;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.modal-close {
+  position: absolute;
+  top: -40px;
+  right: -40px;
+  background: none;
+  border: none;
+  color: #BBE6E4;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+
+.modal-close:hover {
+  color: white;
+  transform: scale(1.1);
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+} 

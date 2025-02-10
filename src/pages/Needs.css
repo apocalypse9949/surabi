@@ -1,0 +1,29 @@
+.needs-cont img{
+    margin-top: 150px;
+    width:1000px
+}
+.needs-cont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 200px;
+}
+.needsmob img{
+    display: none;
+}
+
+@media screen and (max-width: 550px){
+    .needs-cont img{
+        display: none;
+    }
+    .needsmob img{
+        display: flex;
+        width:350px;
+    }
+    .needsmob{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: -100px;
+    }
+}

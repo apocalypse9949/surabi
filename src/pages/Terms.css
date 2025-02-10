@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+.terms-container {
+    max-width: 600px;
+    margin: auto;
+    font-family: "Poppins";
+    padding: 20px;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.terms-title {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: 500;
+    
+}
+
+.terms-content {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    background-color: transparent;
+    margin-bottom: 20px;
+    font-weight: 200;
+}
+
+.terms-list {
+    list-style-type: disc;
+    margin-left: 20px;
+    line-height: 30px;
+    margin-top: 40px;
+}
+
+.terms-checkbox {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.terms-checkbox label {
+    margin-left: 0;
+}
+
+.terms-checkbox input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+}
+
+.terms-content p {
+    margin-bottom: 0;
+}
+
+.register-button {
+    font-family: "Kalnia";
+    margin-top: 50px;
+    width:40%;
+    padding:15px;
+    border:2px solid #691fa2;
+    background: #691fa276;
+    font-size: 17px;
+    border-radius:30px;
+    color:#691fa2;
+    transition: 0.5s;
+    margin-bottom: 200px;
+}
+
+.register-button:hover {
+    background-color: #691fa2;
+    color:black;
+    transition: 0.5s;
+}

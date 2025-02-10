@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+html, body {
+  margin: 0;
+  padding: 0;
+  height: auto;
+  overflow-x: hidden;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #e100ff26, rgba(255,255,255,0)),
+  url('https://res.cloudinary.com/ds18h1q0k/image/upload/v1735379769/bgm_fstup6.png');  
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto; /* Allow vertical scrolling */
+}
+
+.register-container {
+  flex: 1;
+  background-color: #000;
+  color: #BBE6E4;
+  padding: 20px;
+  border-radius: 30px;
+  max-width: 600px;
+  margin: auto;
+  box-shadow: 0 0 200px #BBE6E468;
+  transition: 0.5s;
+  font-family: 'Poppins', sans-serif;
+  align-items: center;
+  margin-top: 50px;
+  position: relative;
+  z-index: 1;
+}
+.register-container:hover{
+  box-shadow: 
+  0 0 500px #BBE6E4b8;
+}
+
+h2 {
+  text-align: center;
+
+}
+
+p {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input, select {
+  padding: 18px;
+  margin: 10px 0;
+  border: 1.5px solid #BBE6E4;
+  border-radius: 40px;
+  font-size: 16px;
+  width: 100%;
+  background-color: #000;
+  color: #BBE6E4;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+input::placeholder, select::placeholder {
+  color: #BBE6E4;
+  font-family: 'Poppins', sans-serif;
+}
+
+.register-container button {
+  font-family: "Kalnia";
+  margin-top: 50px;
+  width: 40%;
+  padding: 15px;
+  border: 2px solid #BBE6E4;
+  background: #BBE6E476;
+  font-size: 17px;
+  border-radius: 30px;
+  color: #BBE6E4;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.register-container a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+}
+
+.register-container h2{
+  color:#BBE6E4;
+  font-family: "Kalnia";
+  font-weight: 500;
+}
+.register-container p{
+  margin-bottom: 60px;
+}
+
+.login-link {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.register-page {
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #e100ff26, rgba(255,255,255,0)),
+    url('https://res.cloudinary.com/ds18h1q0k/image/upload/v1735379769/bgm_fstup6.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  width: 100%;
+}

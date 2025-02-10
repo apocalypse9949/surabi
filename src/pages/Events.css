@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Dorsa&display=swap');
+h1{
+    font-size: 70px;
+    letter-spacing: 3px;
+    font-weight: 600;
+    color: #faf3ff;
+    text-align: center;
+    margin-bottom: -45px;
+    font-family: 'Kalnia', sans-serif;
+    margin-top: 150px;
+}
+.left p{
+    color:#ffffff;
+    width:80%;
+    line-height: 30px;
+    margin-top: 30px;
+    background: none;
+    margin-bottom: 30px;
+}
+.left{
+    background: none;
+    margin-left: 25px;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(14, 14, 14);
+    padding: 20px;
+    width:80%;
+    border: 2px solid #b97de8;
+    border-radius: 40px;
+    transition: 0.5s;
+}
+.box:hover{
+    box-shadow: 
+    0 0 151px #dea3eead;
+    transition: 0.5s;
+}
+.right img{
+    width: 200px;
+    border-radius: 30px;
+    background: none;
+}
+.right{
+    background: none;
+}
+.boxp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: 300;
+}
+.down{
+    background: none;
+    display: flex;
+    gap:20px;
+}
+.dleft{
+    background: none;
+}
+.dright{
+    background: none;
+    color: #fff;
+    font-size: 14px;
+    padding: 2px 40px;
+    background: rgb(0, 0, 0);
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    gap:100px;
+}
+.dright h3{
+    font-weight: 400;
+}
+.dleft button{
+    background-color: rgb(0, 0, 0);
+    border-radius: 40px;
+    padding: 20px 50px;
+    border: 2px solid black;
+    color: #fff;
+    font-family: 'Kalnia';
+    font-size: 15px;
+    transition: 0.5s;
+}
+.dleft button:hover{
+    border:2px solid #c88af7;
+    background: #691fa256;
+    transition: 0.5s;
+}
+.box h2{
+    color:#ba7aeb;
+    font-size: 30px;
+    font-weight: 400;
+}
+.event{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+}
+.footer{
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .footer img{
+    width: 98%;
+  }
+
+  @media screen and (max-width: 550px){
+    .event h1{
+        font-size: 30px;
+        margin-bottom: -30px;
+        margin-top: 50px;
+    }
+    .box{
+        height:800px;
+        width:320px;
+        border-radius: 30px;
+        flex-direction: column;
+        gap:30px
+    }
+    .left h2{
+        font-size: 20px;
+    }
+    .left p{
+        width:300px;
+    }
+    .down{
+        flex-direction: column;
+        align-items: center;
+    }
+    .dleft button{
+        width:300px;
+    }
+    .right img{
+        width:250px;
+    }
+    .dright h3{
+        font-size: 9px;
+
+    }
+    .dright{
+        gap:35px;
+    }
+    
+  }

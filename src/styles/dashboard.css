@@ -1,0 +1,99 @@
+/* Base styles */
+.dashboard-container {
+  @apply bg-gradient-to-br from-purple-950 to-purple-900 min-h-screen;
+}
+
+/* Sidebar styles */
+.sidebar-nav {
+  @apply w-64 min-h-screen bg-purple-950/90 p-4 shadow-xl border-r border-purple-800/30;
+}
+
+.nav-button {
+  @apply w-full text-left py-3 px-4 mb-3 rounded-lg transition-all duration-200
+         font-medium tracking-wide text-base;
+}
+
+.nav-button-active {
+  @apply bg-purple-700 text-white shadow-md;
+}
+
+.nav-button-default {
+  @apply text-purple-200 hover:bg-purple-800/50 hover:text-white;
+}
+
+/* Schedule styles */
+.schedule-container {
+  @apply max-w-7xl mx-auto p-8 bg-purple-900/20 rounded-2xl shadow-lg;
+}
+
+.time-slot {
+  @apply bg-purple-900/40 rounded-xl p-6 mb-6 border border-purple-700/30
+         backdrop-blur-sm transition-all duration-300 hover:bg-purple-900/50;
+}
+
+.event-card {
+  @apply bg-purple-800/30 rounded-lg p-4 mb-3 border border-purple-600/20
+         hover:border-purple-500/40 transition-all duration-200;
+}
+
+/* Profile styles */
+.profile-container {
+  @apply max-w-4xl mx-auto bg-purple-900/30 rounded-xl p-8 shadow-lg
+         backdrop-blur-sm border border-purple-800/30;
+}
+
+.profile-field {
+  @apply grid grid-cols-2 gap-6 items-center py-3 border-b border-purple-700/30
+         last:border-b-0;
+}
+
+.profile-label {
+  @apply text-purple-200 font-medium;
+}
+
+.profile-value {
+  @apply text-white font-normal;
+}
+
+/* Form elements */
+.input-field {
+  @apply bg-purple-800/50 text-white px-4 py-2.5 rounded-lg
+         border border-purple-600/50 focus:border-purple-500
+         focus:outline-none focus:ring-2 focus:ring-purple-500/50
+         placeholder-purple-400;
+}
+
+.button-primary {
+  @apply px-6 py-2.5 bg-purple-600 text-white rounded-lg
+         hover:bg-purple-500 transition-colors duration-200
+         focus:outline-none focus:ring-2 focus:ring-purple-500/50
+         disabled:opacity-50 disabled:cursor-not-allowed;
+}
+
+.button-secondary {
+  @apply px-6 py-2.5 bg-purple-800/50 text-purple-200 rounded-lg
+         hover:bg-purple-700 transition-colors duration-200
+         focus:outline-none focus:ring-2 focus:ring-purple-600/50;
+}
+
+/* Status indicators */
+.status-badge {
+  @apply px-3 py-1 rounded-full text-sm font-medium;
+}
+
+.status-pending {
+  @apply bg-yellow-500/20 text-yellow-300;
+}
+
+.status-verified {
+  @apply bg-green-500/20 text-green-300;
+}
+
+/* Messages */
+.message-success {
+  @apply mb-4 p-4 bg-green-500/20 text-green-300 rounded-lg;
+}
+
+.message-error {
+  @apply mb-4 p-4 bg-red-500/20 text-red-300 rounded-lg;
+} 
